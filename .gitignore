@@ -1,0 +1,52 @@
+# --- Python Basics ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Installation & Build Artifacts ---
+# These are created when you run 'pip install -e .'
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Environments ---
+# Ignore your virtual environments (common names listed)
+.env
+.venv
+env/
+venv/
+ENV/
+
+# --- IDEs & OS ---
+# Mac specific
+.DS_Store
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+
+# --- Project Specific (Crucial for Science) ---
+# Ignore raw data and large datasets
+data/
+*.nc
+*.csv
+*.tif
+
+# Ignore output folders (defined in your config.py)
+scratch/
+img/
+plots/
+
+# --- Testing ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Optional: Credentials ---
+# Never commit passwords or API keys
+secrets.py
