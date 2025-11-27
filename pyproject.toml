@@ -10,10 +10,14 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+requires-python = ">=3.11"
 # ...
 dependencies = [
   "numpy",
+  "pandas",
+  "dask",
   "xarray",
+  "netcdf4",
   "matplotlib",
   "cartopy",
   "seaborn",
