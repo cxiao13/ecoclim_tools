@@ -1,5 +1,4 @@
-````markdown
-# eco_tools: Eco-Resilience Analysis Toolkit
+# ecoclim_tools: Eco-Resilience Analysis Toolkit
 
 A lightweight Python package containing shared utilities for data preprocessing (detrending, deseasonalizing) and visualization (maps, boxplots).
 
@@ -7,7 +6,7 @@ This package is designed to be modular and installable, following the best pract
 
 ## 📦 Installation
 
-This package is designed to be installed in **editable mode**. This means you can modify the code in `eco_tools/` and the changes will immediately be reflected in your scripts without reinstalling.
+This package is designed to be installed in **editable mode**. This means you can modify the code in `ecoclim_tools/` and the changes will immediately be reflected in your scripts without reinstalling.
 
 1. **Clone or download** this repository.
 2. Open your terminal and navigate to the root folder (where `pyproject.toml` is).
@@ -15,7 +14,7 @@ This package is designed to be installed in **editable mode**. This means you ca
 
 ```bash
 pip install -e .
-````
+
 
 ### Dependencies
 
@@ -33,7 +32,7 @@ The installation will automatically fetch the required libraries, including:
 The package exposes common climate data operations at the top level.
 
 ```python
-import eco_tools as et
+import ecoclim_tools as et
 import xarray as xr
 
 # Load your raw data
@@ -72,7 +71,7 @@ et.plot.plot_boxplot([data_array1, data_array2], xlabels=['Region A', 'Region B'
 
 The package looks for a configuration file to determine where to save figures and intermediate data.
 
-You can modify `eco_tools/config.py` directly, or set the environment variable `ECO_SCRATCH` on your system.
+You can modify `ecoclim_tools/config.py` directly, or set the environment variable `ECO_SCRATCH` on your system.
 
 ```python
 # Check your current config paths
@@ -82,9 +81,9 @@ print(et.config.SCRATCH_PATH)
 ## 📂 Project Structure
 
 ```text
-eco_tools_project/
+ecoclimate_tools_project/
 ├── pyproject.toml       # Installer configuration
-├── eco_tools/           # Source code
+├── ecoclim_tools/           # Source code
 │   ├── __init__.py      # Exports functions
 │   ├── config.py        # Paths and settings
 │   ├── preprocess.py    # Math & Xarray wrappers (detrend, etc.)
@@ -96,6 +95,4 @@ eco_tools_project/
 
 [MIT](LICENSE) - Free to use and modify.
 
-```
-
-```
+---

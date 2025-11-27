@@ -1,5 +1,5 @@
 [project]
-name = "eco_tools"
+name = "ecoclim_tools"
 version = "0.1.0"
 description = "Lightweight utilities and plotting for eco-climate data."
 authors = [{name = "Chenwei Xiao", email = "chenwei.xiao.13@gmail.com"}]

@@ -1,5 +1,5 @@
 """
-eco_tools: A lightweight package for eco-climate data preprocessing and plotting.
+ecoclim_tools: A lightweight package for eco-climate data preprocessing and plotting.
 """
 
 # 1. Define the version
@@ -25,7 +25,7 @@ from .preprocess import (
     mask_ocean
 )
 
-# 5. (Optional) Define what gets imported if 'from eco_tools import *'
+# 5. (Optional) Define what gets imported if 'from ecoclim_tools import *'
 __all__ = [
     "config",
     "plot",
