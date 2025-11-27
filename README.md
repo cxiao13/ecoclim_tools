@@ -1,4 +1,4 @@
-# ecoclim_tools: Eco-Resilience Analysis Toolkit
+# ecoclim_tools: Eco-climate Data Analysis Toolkit
 
 A lightweight Python package containing shared utilities for data preprocessing (detrending, deseasonalizing) and visualization (maps, boxplots).
 
