@@ -41,12 +41,11 @@ def plot_save(save_fig='figure', path=None):
     """
     if save_fig is not None:
         if path is None:
-            # defaults to ./img/ if config not set
-            base_dir = os.path.join(DEFAULT_SAVE_PATH, 'img') 
+            # defaults to . if config not set
+            base_dir = os.path.join(DEFAULT_SAVE_PATH) 
         else:
             base_dir = path
             
-        os.makedirs(base_dir, exist_ok=True)
         full_path = os.path.join(base_dir, f"{save_fig}.png")
         plt.savefig(full_path, dpi=DEFAULT_DPI, bbox_inches='tight')
 

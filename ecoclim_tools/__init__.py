@@ -19,10 +19,12 @@ from . import plot
 from .preprocess import (
     format_coords,
     detrend,
+    detrend_dask,
     deseasonalize,
     area_weighted_mean,
+    standardize,
     normalize,
-    mask_ocean
+    # mask_ocean
 )
 
 # 5. (Optional) Define what gets imported if 'from ecoclim_tools import *'
@@ -31,8 +33,10 @@ __all__ = [
     "plot",
     "format_coords",
     "detrend",
+    "detrend_dask",
     "deseasonalize",
     "area_weighted_mean",
+    "standardize",
     "normalize",
-    "mask_ocean",
+    # "mask_ocean",
 ]

@@ -4,10 +4,10 @@ version = "0.1.0"
 description = "Lightweight utilities and plotting for eco-climate data."
 authors = [{name = "Chenwei Xiao", email = "chenwei.xiao.13@gmail.com"}]
 readme = "README.md"
-license = {file = "LICENSE"}  # Points to the file you just created
+license = "MIT"
+license-files = ["LICENSE"]
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 requires-python = ">=3.11"
@@ -23,3 +23,8 @@ dependencies = [
   "seaborn",
   "mplotutils @ git+https://github.com/mpytools/mplotutils.git", 
 ]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ecoclim_tools"]  # <-- Be explicit! Only include your package name
+exclude = ["scratch*", "tests*", "data*", "img*"] # <-- Explicitly ignore these folders

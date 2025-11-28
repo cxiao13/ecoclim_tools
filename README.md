@@ -41,13 +41,10 @@ ds = xr.open_dataset('raw_data.nc')
 # 1. Fix Coordinates (Longitude 0-360 -> -180-180, sort Lat/Lon)
 ds = et.standardize_coords(ds)
 
-# 2. Mask Ocean (Keep Land only)
-ds_land = et.mask_ocean(ds)
-
-# 3. Remove Linear Trend
+# 2. Remove Linear Trend
 ds_detrended = et.detrend(ds_land, dim='time')
 
-# 4. Remove Seasonal Cycle
+# 3. Remove Seasonal Cycle
 ds_anom = et.deseasonalize(ds_detrended)
 ```
 
